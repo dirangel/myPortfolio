@@ -151,11 +151,17 @@ h1.name{
   max-width: 700px;
   margin: 0 auto;
 }
+@media(max-width: 950px){
+  .grid-texto{
+    padding: 20px;
+  }
+}
 
 .texto{
   text-align: center;
   line-height: 1.5;
 }
+
 
 /*-----------HABILIDADE-----------*/
 .styloh1{
