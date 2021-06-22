@@ -26,8 +26,8 @@ img {
   border-radius: 50%;
   box-shadow: 5px 5px 10px 3px rgba(44, 44, 44, 0.15);
 }
-@media (max-width: 280px){
-  img{
+@media (max-width: 280px) {
+  img {
     max-width: 250px;
   }
 }
@@ -70,8 +70,6 @@ body {
   font-size: 13px;
 }
 
-
-
 /*-----------APRESENTACAO-----------*/
 .grid-texto1,
 .grid-texto2 {
@@ -90,27 +88,26 @@ body {
   justify-content: center;
 }
 
-
 .grid-texto2 {
   display: grid;
   justify-content: flex-end;
 }
 
 .perfil {
-  display: grid ;
+  display: grid;
   grid-template-columns: 280px 350px 280px;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
 }
 
-@media (max-width: 950px){
-  .perfil, 
-  .grid-texto{
-  display: grid;
-  grid-template-columns: 1fr;
+@media (max-width: 950px) {
+  .perfil,
+  .grid-texto {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .grid1{
+  .grid1 {
     justify-content: center;
   }
 }
@@ -121,56 +118,54 @@ body {
   padding: 0px 0px;
   display: flex;
   justify-content: center;
-
 }
 
-.name{
-  font-family: 'Shadows Into Light', cursive;
+.name {
+  font-family: "Shadows Into Light", cursive;
   text-align: center;
   font-size: 40px;
   color: #263238;
-  margin-top: 40px;  
+  margin-top: 40px;
 }
 
-.funcao{
+.funcao {
   font-size: 13px;
   text-decoration: overline;
   color: rgb(85, 81, 81);
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-h1.name{
+h1.name {
   margin: 20px 00px 10px;
   padding: 0px 50px 0px;
 }
 
 /*-----------TextoApresentação-----------*/
-.grid-texto{
+.grid-texto {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 700px;
   margin: 0 auto;
 }
-@media(max-width: 950px){
-  .grid-texto{
+@media (max-width: 950px) {
+  .grid-texto {
     padding: 20px;
   }
 }
 
-.texto{
+.texto {
   text-align: center;
   line-height: 1.5;
 }
 
-
 /*-----------HABILIDADE-----------*/
-.styloh1{
+.styloh1 {
   font-family: "Ubuntu", sans-serif;
   color: #009688;
   text-align: center;
 }
 
-.grid-habilidades{
+.grid-habilidades {
   background: #f6f6f6;
   padding: 30px;
 }
@@ -182,29 +177,27 @@ h1.name{
   justify-content: center;
 }
 
-@media (max-width: 950px){
-  .lista-habilidade{
+@media (max-width: 950px) {
+  .lista-habilidade {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(3, 130px);
-
   }
 }
 
-.item{
+.item {
   color: white;
   border: 1px solid white;
   padding: 5px;
   margin: 5px;
   background: #263238;
-  border-radius: 5px;  
+  border-radius: 5px;
   text-align: center;
 }
 
-
 /*--------------EMPRESAS--------------*/
-.container{
+.container {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: 350px;
@@ -213,17 +206,17 @@ h1.name{
   justify-content: center;
 }
 
-.item-empresa{
+.item-empresa {
   background: #f6f6f6;
   text-align: center;
   color: #263238;
   border-radius: 5px;
   padding: 100px 20px;
-   box-shadow: 5px 5px 0px 1px rgba(44, 44, 44, 0.15) ;
+  box-shadow: 5px 5px 0px 1px rgba(44, 44, 44, 0.15);
 }
 
 /*--------------FOOTER--------------*/
-.footer{
+.footer {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #263238;
@@ -231,23 +224,34 @@ h1.name{
   align-self: center;
 }
 
-.footer-texto{
+.footer-texto {
   color: #f6f6f6;
   text-align: center;
   font-size: 20px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 
-.social{
+.social {
   text-align: center;
   padding-bottom: 10px;
 }
 
-.icon{
+.icon {
   margin: 3px;
 }
 
-.container{
-  display: flex;
-  flex-direction: row-reverse;
+.container {
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate(-30px, 0, 0);
 }
