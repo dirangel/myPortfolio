@@ -200,8 +200,8 @@ h1.name {
 /*--------------EMPRESAS--------------*/
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
-  grid-template-rows: 350px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 250px;
   grid-gap: 30px;
   padding: 30px;
   justify-content: center;
